@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>כדן שטח - קומקום שטח להישרדות</title>
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Assistant', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #eef3ea;
+      color: #1f2d1f;
+    }
+    header, footer {
+      background: #1f2d1f;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    nav {
+      background: #314d31;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('hero.jpg') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 6px black;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .product {
+      display: flex;
+      flex-wrap: wrap;
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    .product img {
+      max-width: 100%;
+      width: 350px;
+      margin-left: 2rem;
+      border-radius: 8px;
+    }
+    .details {
+      flex: 1;
+    }
+    .details h2 {
+      margin-top: 0;
+    }
+    .price {
+      font-size: 1.8rem;
+      color: #2e7d32;
+      margin: 1rem 0;
+    }
+    .about, .contact {
+      background: white;
+      margin-top: 2rem;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+    form input[type="image"] {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>כדן שטח</h1>
+    <p>קומקום שטח מתקדם, קל, עמיד, מוכן להרפתקה הבאה</p>
+  </header>
+
+  <nav>
+    <a href="#product">חנות</a>
+    <a href="#about">אודות</a>
+    <a href="#contact">צור קשר</a>
+  </nav>
+
+  <div class="hero">
+    <h1>מרתיח מים בכל תנאי שטח</h1>
+  </div>
+
+  <div class="container">
+    <section id="product" class="product">
+      <img src="kettle.jpg" alt="תמונת קומקום כדן שטח">
+      <div class="details">
+        <h2>קומקום כדן שטח</h2>
+        <p>הדרך המהירה, הקלה והטבעית להכין מים חמים בשטח. אידיאלי לקפה, תה, אוכל מיובש ולחיטוי מים.</p>
+        <p class="price">89 ש"ח</p>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_s-xclick" />
+          <input type="hidden" name="hosted_button_id" value="F8GCZD7JD557Y" />
+          <input type="hidden" name="currency_code" value="USD" />
+          <input type="image" src="https://www.paypalobjects.com/he_IL/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal - הדרך הבטוחה והקלה לשלם באינטרנט!" alt="קנה עכשיו" />
+        </form>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <h2>עלינו</h2>
+      <p>כדן שטח נולד מתוך אהבת השטח והצורך באביזרים אמינים שישרתו אותך גם במצבים קשים. אנחנו בונים ציוד שדה כמו פעם - עמיד, פשוט ומעוצב לשימוש אמיתי.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>צור קשר</h2>
+      <p>לשאלות או הזמנות סיטונאיות:</p>
+      <p><strong>kadanshetach@gmail.com</strong></p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 כדן שטח. כל הזכויות שמורות.
+  </footer>
+</body>
+</html>
